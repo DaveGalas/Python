@@ -1,0 +1,63 @@
+<Button>
+    size_hint: (None, None)
+    width: 70
+    height: 30
+    font_size: 13
+    background_normal: ''
+
+<Label>
+    size_hint: (None, None)
+    width: 90
+    height: 30
+    pos: (0,0)
+    halign: "left"
+    valign: "middle"
+
+<TextInput>
+    size_hint: (None, None)
+    width: 300
+    height: 30
+
+<Mylayout>
+
+    BoxLayout:
+        orientation: "vertical"
+        spacing: 20
+
+        BoxLayout:
+            orientation: "horizontal"
+            size: root.width, root.height
+
+            padding: 10
+            spacing: 20
+
+            Label:
+                text: "Name"
+
+            TextInput:
+                multiline: False
+
+        BoxLayout:
+            orientation: "horizontal"
+            padding: 10
+            spacing: 20
+
+            Label:
+                text: "Favorite Pizza"
+
+            TextInput:
+                multiline: False
+
+        BoxLayout:
+            orientation: "horizontal"
+            size: root.width, root.height
+            padding: 10
+            spacing: 10
+
+            Button:
+                text: "Submit"
+                background_color: (0.32, 0.44, 0.16)
+
+            Button:
+                text: "Clear"
+                background_color: (1.00, 0.38, 0.29)
