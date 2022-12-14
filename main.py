@@ -2,7 +2,7 @@ import random
 
 
 def hula():
-    x = int(input("Ilang items huhulaan mo: "))
+    x = int(input("How many items you'll be guessing: "))
 
     for i in range(x):
         n = random.randint(1, 4)
@@ -11,7 +11,7 @@ def hula():
 
         print(f"{i + 1}.)", cat[n], end="")
 
-    print("\n\nChances na tama ka sa lahat: 1 in {:,}".format(4 ** x))
+    print("\n\nChance of you getting all of them correct: 1 in {:,}".format(4 ** x))
 
 
 hula()
