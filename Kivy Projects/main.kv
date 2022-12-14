@@ -12,6 +12,7 @@
     pos: (0,0)
     halign: "left"
     valign: "middle"
+    color: (0, 0, 0)
 
 <TextInput>
     size_hint: (None, None)
@@ -19,7 +20,12 @@
     height: 30
 
 <Mylayout>
-
+    canvas.before:
+        Color:
+            rgba: (0.94, 0.94, 0.94)
+        Rectangle:
+            pos: self.pos
+            size: self.size
     BoxLayout:
         orientation: "vertical"
         spacing: 20
