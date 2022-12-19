@@ -1,3 +1,5 @@
 a = [1, 2, 3, 4]
 
-print(len(a))
+a.remove(1)
+
+print(a)
